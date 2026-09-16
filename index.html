@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>DJASIA LUXEMBOURG | Fashion</title>
-  <meta name="description" content="DJASIA LUXEMBOURG – Fashion, Style und neue Kollektionen aus Luxemburg.">
+  <title>DJASIA LUXEMBOURG | Abayas & Hijabs</title>
+
+  <meta name="description"
+        content="DJASIA LUXEMBOURG – Abayas, Hijabs und elegante Modest Fashion. Entdecke unsere neuesten Kollektionen.">
 
   <style>
     * {
@@ -20,51 +22,62 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #fff;
-      color: #111;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #faf9f7;
+      color: #171512;
     }
 
-    /* NAVIGATION */
+    /* =========================
+       NAVIGATION
+    ========================= */
+
     header {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       z-index: 1000;
-      background: rgba(255,255,255,0.94);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid #eee;
+
+      background: rgba(250, 249, 247, 0.95);
+      backdrop-filter: blur(12px);
+
+      border-bottom: 1px solid #e5e1db;
     }
 
     nav {
-      max-width: 1300px;
+      max-width: 1350px;
+      height: 78px;
       margin: auto;
-      height: 75px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 30px;
+
+      padding: 0 35px;
     }
 
     .logo {
-      font-size: 22px;
-      font-weight: 800;
-      letter-spacing: 4px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: 5px;
     }
 
     .nav-links {
       display: flex;
-      gap: 35px;
+      gap: 34px;
       list-style: none;
     }
 
     .nav-links a {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #171512;
       text-decoration: none;
-      color: #111;
-      font-size: 13px;
+
+      font-size: 11px;
       font-weight: 600;
-      letter-spacing: 1.5px;
+      letter-spacing: 2px;
+
       transition: 0.3s;
     }
 
@@ -72,166 +85,242 @@
       opacity: 0.5;
     }
 
-    /* HERO */
+
+    /* =========================
+       HERO
+    ========================= */
+
     .hero {
       min-height: 100vh;
+
       display: flex;
       align-items: center;
       justify-content: center;
+
       text-align: center;
-      padding: 100px 20px 50px;
+
+      padding: 120px 25px 60px;
 
       background:
-        linear-gradient(rgba(0,0,0,0.38), rgba(0,0,0,0.38)),
+        linear-gradient(
+          rgba(20, 18, 15, 0.42),
+          rgba(20, 18, 15, 0.42)
+        ),
         url("hero.jpg") center/cover no-repeat;
-      background-color: #222;
+
+      background-color: #cfc8bd;
     }
 
     .hero-content {
       color: white;
-      max-width: 850px;
+      max-width: 900px;
     }
 
-    .hero-content p {
-      font-size: 13px;
+    .hero-small {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
       letter-spacing: 5px;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
-    .hero-content h1 {
-      font-size: clamp(45px, 9vw, 105px);
-      letter-spacing: 8px;
-      font-weight: 800;
+    .hero h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(48px, 9vw, 110px);
+
+      letter-spacing: 10px;
+      font-weight: 700;
+
       margin-bottom: 25px;
     }
 
-    .hero-content .subtitle {
-      font-size: 16px;
-      letter-spacing: 3px;
-      margin-bottom: 35px;
+    .hero-subtitle {
+      font-size: 20px;
+      letter-spacing: 2px;
+      margin-bottom: 38px;
     }
 
     .button {
       display: inline-block;
-      padding: 15px 32px;
+
+      padding: 16px 34px;
+
       background: white;
-      color: #111;
+      color: #171512;
+
       text-decoration: none;
-      font-size: 12px;
-      font-weight: bold;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+
       letter-spacing: 2px;
+
       transition: 0.3s;
     }
 
     .button:hover {
-      background: #111;
+      background: #171512;
       color: white;
     }
 
-    /* SECTIONS */
+
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
+
     section {
-      padding: 100px 30px;
+      padding: 105px 30px;
+    }
+
+    .container {
+      max-width: 1350px;
+      margin: auto;
     }
 
     .section-title {
       text-align: center;
-      margin-bottom: 55px;
+      margin-bottom: 60px;
     }
 
-    .section-title p {
-      font-size: 11px;
+    .section-title small {
+      display: block;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
       letter-spacing: 4px;
-      margin-bottom: 12px;
-      color: #777;
+
+      color: #8a8176;
+
+      margin-bottom: 14px;
     }
 
     .section-title h2 {
-      font-size: 38px;
-      letter-spacing: 4px;
+      font-size: 42px;
+      font-weight: 400;
+      letter-spacing: 3px;
     }
 
-    /* COLLECTION */
-    .collection {
-      max-width: 1300px;
-      margin: auto;
+
+    /* =========================
+       CATEGORIES
+    ========================= */
+
+    .categories {
+      background: #f3f0eb;
     }
 
-    .collection-grid {
+    .category-grid {
       display: grid;
+
       grid-template-columns: repeat(3, 1fr);
+
       gap: 18px;
     }
 
-    .collection-card {
+    .category {
       position: relative;
+
+      height: 500px;
+
       overflow: hidden;
-      background: #eee;
-      aspect-ratio: 3 / 4;
+
+      background: #ddd;
     }
 
-    .collection-card img {
+    .category img {
       width: 100%;
       height: 100%;
+
       object-fit: cover;
-      display: block;
-      transition: transform 0.6s ease;
+
+      transition: transform 0.7s ease;
     }
 
-    .collection-card:hover img {
+    .category:hover img {
       transform: scale(1.05);
     }
 
-    .card-label {
+    .category-overlay {
       position: absolute;
-      bottom: 20px;
-      left: 20px;
+
+      inset: 0;
+
+      display: flex;
+      align-items: flex-end;
+
+      padding: 30px;
+
+      background:
+        linear-gradient(
+          transparent 40%,
+          rgba(0,0,0,0.6)
+        );
+
       color: white;
-      font-size: 14px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      text-shadow: 0 2px 10px #000;
     }
 
-    /* ABOUT */
+    .category-overlay h3 {
+      font-family: Arial, Helvetica, sans-serif;
+
+      font-size: 18px;
+      letter-spacing: 3px;
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================= */
+
     .about {
-      background: #f6f6f6;
+      background: #faf9f7;
     }
 
     .about-content {
       max-width: 850px;
       margin: auto;
+
       text-align: center;
     }
 
     .about-content p {
-      font-size: 17px;
-      line-height: 1.9;
-      color: #444;
+      font-size: 18px;
+      line-height: 2;
+
+      color: #514c45;
     }
 
-    /* INSTAGRAM */
+
+    /* =========================
+       INSTAGRAM
+    ========================= */
+
     .instagram {
-      max-width: 1300px;
-      margin: auto;
+      background: #f3f0eb;
     }
 
     .instagram-grid {
       display: grid;
+
       grid-template-columns: repeat(4, 1fr);
-      gap: 8px;
+
+      gap: 7px;
     }
 
     .instagram-box {
       aspect-ratio: 1 / 1;
-      background: #eee;
+
       overflow: hidden;
+
+      background: #ddd;
     }
 
     .instagram-box img {
       width: 100%;
       height: 100%;
+
       object-fit: cover;
-      transition: 0.5s;
+
+      transition: transform 0.5s ease;
     }
 
     .instagram-box:hover img {
@@ -240,68 +329,103 @@
 
     .instagram-button {
       text-align: center;
-      margin-top: 40px;
+
+      margin-top: 45px;
     }
 
-    /* CONTACT */
+
+    /* =========================
+       CONTACT
+    ========================= */
+
     .contact {
-      background: #111;
+      background: #1c1a17;
+
       color: white;
+
       text-align: center;
     }
 
     .contact h2 {
-      font-size: 40px;
+      font-size: 44px;
+      font-weight: 400;
+
       letter-spacing: 4px;
+
       margin-bottom: 20px;
     }
 
     .contact p {
-      color: #bbb;
-      margin-bottom: 30px;
+      color: #c7c2bb;
+
+      font-size: 17px;
+
+      margin-bottom: 35px;
     }
 
     .contact .button {
       background: white;
-      color: #111;
+      color: #171512;
     }
 
-    /* FOOTER */
+
+    /* =========================
+       FOOTER
+    ========================= */
+
     footer {
-      background: #111;
-      border-top: 1px solid #333;
-      color: #777;
+      background: #1c1a17;
+
+      border-top: 1px solid #38342f;
+
+      color: #8e8982;
+
       text-align: center;
-      padding: 25px;
-      font-size: 11px;
-      letter-spacing: 1px;
+
+      padding: 28px;
+
+      font-family: Arial, Helvetica, sans-serif;
+
+      font-size: 10px;
+
+      letter-spacing: 2px;
     }
 
-    /* MOBILE */
-    @media (max-width: 800px) {
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 850px) {
+
+      nav {
+        padding: 0 18px;
+      }
+
       .nav-links {
-        gap: 15px;
+        gap: 14px;
       }
 
       .nav-links a {
-        font-size: 10px;
-      }
-
-      nav {
-        padding: 0 15px;
+        font-size: 9px;
+        letter-spacing: 1px;
       }
 
       .logo {
         font-size: 16px;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
       }
 
       section {
-        padding: 70px 18px;
+        padding: 75px 18px;
       }
 
-      .collection-grid {
-        grid-template-columns: repeat(2, 1fr);
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .category {
+        height: 450px;
       }
 
       .instagram-grid {
@@ -309,178 +433,358 @@
       }
 
       .section-title h2 {
-        font-size: 28px;
+        font-size: 30px;
       }
     }
 
+
     @media (max-width: 500px) {
+
       .nav-links {
         display: none;
       }
 
-      .hero-content h1 {
-        letter-spacing: 4px;
+      .hero h1 {
+        letter-spacing: 5px;
       }
 
-      .collection-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
+      .hero-subtitle {
+        font-size: 15px;
+      }
+
+      .category {
+        height: 420px;
+      }
+
+      .contact h2 {
+        font-size: 32px;
       }
     }
+
   </style>
 </head>
 
+
 <body>
 
-  <!-- NAVIGATION -->
-  <header>
-    <nav>
-      <div class="logo">DJASIA</div>
 
-      <ul class="nav-links">
-        <li><a href="#collection">COLLECTION</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#instagram">INSTAGRAM</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
+<!-- =========================
+     NAVIGATION
+========================= -->
 
+<header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <p>LUXEMBOURG</p>
+  <nav>
 
-      <h1>DJASIA</h1>
-
-      <div class="subtitle">
-        FASHION • STYLE • IDENTITY
-      </div>
-
-      <a href="#collection" class="button">
-        DISCOVER COLLECTION
-      </a>
+    <div class="logo">
+      DJASIA
     </div>
-  </section>
+
+    <ul class="nav-links">
+
+      <li>
+        <a href="#collection">COLLECTION</a>
+      </li>
+
+      <li>
+        <a href="#about">ABOUT</a>
+      </li>
+
+      <li>
+        <a href="#instagram">INSTAGRAM</a>
+      </li>
+
+      <li>
+        <a href="#contact">CONTACT</a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+</header>
 
 
-  <!-- COLLECTION -->
-  <section id="collection">
-    <div class="collection">
 
-      <div class="section-title">
-        <p>DJASIA LUXEMBOURG</p>
-        <h2>NEW COLLECTION</h2>
-      </div>
+<!-- =========================
+     HERO
+========================= -->
 
-      <div class="collection-grid">
+<section class="hero">
 
-        <div class="collection-card">
-          <img src="collection1.jpg" alt="Djasia Luxembourg Collection">
-          <div class="card-label">LOOK 01</div>
-        </div>
+  <div class="hero-content">
 
-        <div class="collection-card">
-          <img src="collection2.jpg" alt="Djasia Luxembourg Collection">
-          <div class="card-label">LOOK 02</div>
-        </div>
-
-        <div class="collection-card">
-          <img src="collection3.jpg" alt="Djasia Luxembourg Collection">
-          <div class="card-label">LOOK 03</div>
-        </div>
-
-      </div>
+    <div class="hero-small">
+      LUXEMBOURG
     </div>
-  </section>
 
+    <h1>
+      DJASIA
+    </h1>
 
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <div class="about-content">
-
-      <div class="section-title">
-        <p>THE BRAND</p>
-        <h2>ABOUT DJASIA</h2>
-      </div>
-
-      <p>
-        DJASIA LUXEMBOURG steht für modernen Style,
-        Selbstbewusstsein und individuelle Fashion.
-        Entdecke unsere Looks und folge uns auf Instagram,
-        um die neuesten Kollektionen und Styles zu sehen.
-      </p>
-
+    <div class="hero-subtitle">
+      ABAYAS • HIJABS • MODEST FASHION
     </div>
-  </section>
-
-
-  <!-- INSTAGRAM -->
-  <section id="instagram">
-    <div class="instagram">
-
-      <div class="section-title">
-        <p>FOLLOW OUR STYLE</p>
-        <h2>INSTAGRAM</h2>
-      </div>
-
-      <div class="instagram-grid">
-
-        <div class="instagram-box">
-          <img src="instagram1.jpg" alt="Djasia Instagram">
-        </div>
-
-        <div class="instagram-box">
-          <img src="instagram2.jpg" alt="Djasia Instagram">
-        </div>
-
-        <div class="instagram-box">
-          <img src="instagram3.jpg" alt="Djasia Instagram">
-        </div>
-
-        <div class="instagram-box">
-          <img src="instagram4.jpg" alt="Djasia Instagram">
-        </div>
-
-      </div>
-
-      <div class="instagram-button">
-        <a
-          href="https://www.instagram.com/djas.ialuxembourg/"
-          target="_blank"
-          class="button">
-          @DJAS.IALUXEMBOURG
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-
-    <h2>GET IN TOUCH</h2>
-
-    <p>
-      Entdecke DJASIA LUXEMBOURG auf Instagram.
-    </p>
 
     <a
-      href="https://www.instagram.com/djas.ialuxembourg/"
-      target="_blank"
+      href="#collection"
       class="button">
-      INSTAGRAM ÖFFNEN
+      DISCOVER OUR COLLECTION
     </a>
 
-  </section>
+  </div>
+
+</section>
 
 
-  <!-- FOOTER -->
-  <footer>
-    © 2026 DJASIA LUXEMBOURG — ALL RIGHTS RESERVED
-  </footer>
+
+<!-- =========================
+     COLLECTION
+========================= -->
+
+<section id="collection" class="categories">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <small>
+        DJASIA LUXEMBOURG
+      </small>
+
+      <h2>
+        OUR COLLECTION
+      </h2>
+
+    </div>
+
+
+    <div class="category-grid">
+
+
+      <!-- ABAYAS -->
+
+      <div class="category">
+
+        <img
+          src="abayas.jpg"
+          alt="Djasia Abayas">
+
+        <div class="category-overlay">
+
+          <h3>
+            ABAYAS
+          </h3>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- HIJABS -->
+
+      <div class="category">
+
+        <img
+          src="hijabs.jpg"
+          alt="Djasia Hijabs">
+
+        <div class="category-overlay">
+
+          <h3>
+            HIJABS
+          </h3>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- NEW COLLECTION -->
+
+      <div class="category">
+
+        <img
+          src="newcollection.jpg"
+          alt="Djasia New Collection">
+
+        <div class="category-overlay">
+
+          <h3>
+            NEW COLLECTION
+          </h3>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about" class="about">
+
+  <div class="about-content">
+
+    <div class="section-title">
+
+      <small>
+        OUR STORY
+      </small>
+
+      <h2>
+        ABOUT DJASIA
+      </h2>
+
+    </div>
+
+
+    <p>
+
+      DJASIA LUXEMBOURG steht für elegante
+      Modest Fashion mit einem modernen und
+      zeitlosen Stil.
+
+      <br><br>
+
+      Entdecke unsere Auswahl an Abayas,
+      Hijabs und weiteren Styles für Frauen,
+      die Eleganz und Individualität verbinden
+      möchten.
+
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     INSTAGRAM
+========================= -->
+
+<section id="instagram" class="instagram">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <small>
+        FOLLOW OUR STYLE
+      </small>
+
+      <h2>
+        INSTAGRAM
+      </h2>
+
+    </div>
+
+
+    <div class="instagram-grid">
+
+
+      <div class="instagram-box">
+        <img
+          src="instagram1.jpg"
+          alt="Djasia Luxembourg Instagram">
+      </div>
+
+
+      <div class="instagram-box">
+        <img
+          src="instagram2.jpg"
+          alt="Djasia Luxembourg Instagram">
+      </div>
+
+
+      <div class="instagram-box">
+        <img
+          src="instagram3.jpg"
+          alt="Djasia Luxembourg Instagram">
+      </div>
+
+
+      <div class="instagram-box">
+        <img
+          src="instagram4.jpg"
+          alt="Djasia Luxembourg Instagram">
+      </div>
+
+
+    </div>
+
+
+    <div class="instagram-button">
+
+      <a
+        href="https://www.instagram.com/djas.ialuxembourg/"
+        target="_blank"
+        class="button">
+
+        FOLLOW @DJAS.IALUXEMBOURG
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact" class="contact">
+
+  <h2>
+    CONTACT DJASIA
+  </h2>
+
+  <p>
+    Questions, commandes ou informations ?
+    Kontaktieren Sie uns über Instagram.
+  </p>
+
+
+  <a
+    href="https://www.instagram.com/djas.ialuxembourg/"
+    target="_blank"
+    class="button">
+
+    @DJAS.IALUXEMBOURG
+
+  </a>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  © 2026 DJASIA LUXEMBOURG
+  — ALL RIGHTS RESERVED
+
+</footer>
+
 
 </body>
 </html>
